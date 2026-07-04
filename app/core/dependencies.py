@@ -1,4 +1,4 @@
-from fastapi import Header, HttpException 
+from fastapi import Header, HTTPException 
 from app.core.config import settings 
 from app.core.security import verify_token 
 
