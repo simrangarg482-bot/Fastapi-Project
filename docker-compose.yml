@@ -6,9 +6,11 @@ services:
     container_name: fastapi-app
     ports:
       - "8000:8000"
+    env_file:
+      - .env
     environment:
-      - API_KEY=demo-key
-      - JWT_SECRET_KEY=secret
+      # Overrides anything in .env so the container always finds Redis
+      # at the right hostname on the compose network.
       - REDIS_URL=redis://redis:6379
     depends_on:
       - redis
