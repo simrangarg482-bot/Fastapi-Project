@@ -9,11 +9,11 @@ class CarFeatures(BaseModel):
     company: str 
     year: int 
     owner: str 
-    feul: str 
+    fuel: str 
     seller_type: str 
     transmission: str
-    km_drive: float
-    milage_mpg: float 
+    km_driven: float
+    mileage_mpg: float 
     engine_cc: float 
     max_power_bhp: float 
     torque_nm: float
