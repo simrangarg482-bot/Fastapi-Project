@@ -11,7 +11,7 @@ class CarFeatures(BaseModel):
     owner: str 
     feul: str 
     seller_type: str 
-    transmission: float
+    transmission: str
     km_drive: float
     milage_mpg: float 
     engine_cc: float 
